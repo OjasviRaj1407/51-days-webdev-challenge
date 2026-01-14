@@ -37,6 +37,7 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 | --- | ----------------------------------------      | ------- | ------ |
 
 | 1   | Web dev fundamentals: IP, DNS, MAC, IPv4/IPv6 | `Day-01`| ✅     |
+
 | 2   | HTML basics: headings, images, lists & a mini “How to Become a Front‑End Developer” page | `Day-02` | ✅     |
 
 
