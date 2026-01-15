@@ -19,15 +19,6 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 \- Maintain a visible GitHub streak and a clean learning log
 
 
-
-### **## 📂 Structure**
-
-
-
-\- `Day-01/` – Internet \& web basics (IP, DNS, MAC, IPv4/IPv6)
-
-
-
 ### **## ✅ Daily Log**
 
 
