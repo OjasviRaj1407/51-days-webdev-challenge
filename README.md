@@ -38,7 +38,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 1   | Web dev fundamentals: IP, DNS, MAC, IPv4/IPv6 | `Day-01`| ✅     |
 
-| 2   | HTML basics: headings, images, lists & a mini “How to Become a Front‑End Developer” page | `Day-02` | ✅     |
+| 2   | HTML basics: headings, images, lists & a mini “How to Become a Front‑End Developer” page | `Day-02` | ✅
+
+| 3   | Nested lists and HTML tables with thead/tbody/tfoot, rowspan/colspan | `Day-03` | ✅ 
 
 
 
