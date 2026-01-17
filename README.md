@@ -35,6 +35,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 4   | HTML file paths : relative vs absolute paths, folder navigation | `Day-04` | ✅ |
 
+| 5   | HTML boilerplate, div container, and using class vs id for styling and unique elements | `Day-05` | ✅ |
+
+
 
 
 
