@@ -37,6 +37,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 5   | HTML boilerplate, div container, and using class vs id for styling and unique elements | `Day-05` | ✅ |
 
+| 6   | HTML forms: text, number, password inputs, labels with id/for, radio buttons, checkboxes, and submit button | `Day-06` | ✅ |
+
+
 
 
 
