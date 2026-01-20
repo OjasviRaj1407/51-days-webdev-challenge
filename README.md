@@ -39,7 +39,10 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 6   | HTML forms: text, number, password inputs, labels with id/for, radio buttons, checkboxes, and submit button | `Day-06` | ✅ |
 
-| 7   | Practice : University registration form with personal, contact, academic details, extracurriculars, and account creation | `Day-07` | ✅ |
+| 7   | Practice 1 : University registration form with personal, contact, academic details, extracurriculars, and account creation | `Day-07` | ✅ |
+
+| 8   | Practice 2 : Student profile page using semantic layout (header, main, section, footer), table, lists, and strong labels | `Day-08` | ✅ |
+
 
 
 
