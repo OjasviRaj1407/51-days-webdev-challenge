@@ -43,6 +43,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 8   | Practice 2 : Student profile page using semantic layout (header, main, section, footer), table, lists, and strong labels | `Day-08` | ✅ |
 
+| 9   | HTML media: using img, audio, and video tags with paths, source elements, fallback content, and best practices | `Day-09` | ✅ |
+
+
 
 
 
