@@ -45,6 +45,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 9   | HTML media: using img, audio, and video tags with paths, source elements, fallback content, and best practices | `Day-09` | ✅ |
 
+| 10  | HTML lists (ul, ol, dl) and understanding block vs inline elements with a small practice page | `Day-10` | ✅ |
+
+
 
 
 
