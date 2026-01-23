@@ -47,6 +47,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 10  | HTML lists (ul, ol, dl) and understanding block vs inline elements with a small practice page | `Day-10` | ✅ |
 
+| 11 | Introduction to CSS: what CSS is, basic rule syntax (selector, property, value), ways to add CSS (inline, internal, external), and core selectors (element, class, id) | `Day-11` | ✅ |
+
+
 
 
 
