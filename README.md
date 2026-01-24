@@ -49,6 +49,8 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 11 | Introduction to CSS: what CSS is, basic rule syntax (selector, property, value), ways to add CSS (inline, internal, external), and core selectors (element, class, id) | `Day-11` | ✅ |
 
+| 12 | Inline CSS: using the style attribute on individual elements, basic syntax, common properties (color, font-size, background-color, padding, margin), and when to use or avoid inline styles | `Day-12` | ✅ |
+
 
 
 
