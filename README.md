@@ -51,6 +51,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 12 | Inline CSS: using the style attribute on individual elements, basic syntax, common properties (color, font-size, background-color, padding, margin), and when to use or avoid inline styles | `Day-12` | ✅ |
 
+| 13 | Inline CSS vs internal CSS using a simple gym page, understanding where inline styles are useful and where they become hard to maintain | `Day-13` | ✅ |
+
+
 
 
 
