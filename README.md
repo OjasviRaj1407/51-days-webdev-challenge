@@ -53,6 +53,8 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 13 | Inline CSS vs internal CSS using a simple gym page, understanding where inline styles are useful and where they become hard to maintain | `Day-13` | ✅ |
 
+| 14 | External CSS: linking a separate stylesheet to the gym page using the link tag, styling headings via h1/h2 selectors, and seeing how design updates happen without changing HTML | `Day-14` | ✅ |
+
 
 
 
