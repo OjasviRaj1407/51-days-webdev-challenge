@@ -55,6 +55,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 14 | External CSS: linking a separate stylesheet to the gym page using the link tag, styling headings via h1/h2 selectors, and seeing how design updates happen without changing HTML | `Day-14` | ✅ |
 
+| 15 | CSS selectors: element, class, ID, and grouping selectors, using them to target tags, reusable styles, unique sections, and keep code DRY | `Day-15` | ✅ |
+
+
 
 
 
