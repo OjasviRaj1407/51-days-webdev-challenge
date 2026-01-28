@@ -57,6 +57,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 15 | CSS selectors: element, class, ID, and grouping selectors, using them to target tags, reusable styles, unique sections, and keep code DRY | `Day-15` | ✅ |
 
+| 16 | Color in CSS: using named colors, hex codes, rgb/rgba, and hsl/hsla to define precise colors and transparency for text and backgrounds | `Day-16` | ✅ |
+
+
 
 
 
