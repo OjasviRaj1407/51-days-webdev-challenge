@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 17 - CSS Color Practice</title>
+
+  <style>
+    /* Page base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5; /* light gray background */
+      color: #222222;
+    }
+
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .section p {
+      margin: 6px 0 12px 0;
+    }
+
+    /* Generic box style for color examples */
+    .color-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .color-box {
+      flex: 1 1 150px;
+      min-height: 70px;
+      border-radius: 6px;
+      padding: 10px;
+      color: #ffffff;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .color-label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* 1) Named color examples */
+    .named-primary {
+      background-color: teal;        /* named color */
+    }
+
+    .named-accent {
+      background-color: tomato;      /* named color */
+    }
+
+    .named-muted {
+      background-color: slategray;   /* named color */
+    }
+
+    /* 2) Hex color examples */
+    .hex-main-bg {
+      background-color: #1E88E5;     /* blue */
+    }
+
+    .hex-dark {
+      background-color: #212121;     /* very dark gray */
+    }
+
+    .hex-soft {
+      background-color: #FFB74D;     /* soft orange */
+    }
+
+    /* 3) RGB / RGBA examples */
+    .rgb-solid {
+      background-color: rgb(76, 175, 80); /* solid green */
+    }
+
+    .rgba-semi {
+      background-color: rgba(156, 39, 176, 0.7); /* semi‑transparent purple */
+    }
+
+    .rgba-overlay-demo {
+      position: relative;
+      background-image: url("https://via.placeholder.com/300x120");
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .rgba-overlay-demo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45); /* dark overlay */
+    }
+
+    .rgba-overlay-text {
+      position: relative;
+      color: #ffffff;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* 4) HSL / HSLA examples */
+    .hsl-base {
+      background-color: hsl(210, 90%, 56%); /* bright blue */
+    }
+
+    .hsl-lighter {
+      background-color: hsl(210, 90%, 80%); /* lighter version of same hue */
+      color: #123456;
+    }
+
+    .hsl-desaturated {
+      background-color: hsl(210, 30%, 50%); /* less saturated, more muted */
+    }
+
+    .hsla-glass {
+      background-color: hsla(0, 0%, 100%, 0.6); /* glassy white */
+      color: #222222;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    /* Simple footer */
+    footer {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 12px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <h1>Day 17 – CSS Color Practice Page</h1>
+    <p>This page is a quick reference and practice file for different CSS color formats : named colors, hex, rgb/rgba, and hsl/hsla.</p>
+
+    <!-- 1) Named colors -->
+    <section class="section">
+      <h2>1. Named Colors</h2>
+      <p>These use predefined color keywords like <code>teal</code>, <code>tomato</code>, and <code>slategray</code> - easy to remember, limited in variety.</p>
+
+      <div class="color-row">
+        <div class="color-box named-primary">
+          <span class="color-label">teal</span>
+          Used as a primary accent color.
+        </div>
+
+        <div class="color-box named-accent">
+          <span class="color-label">tomato</span>
+          A strong call-to-action color.
+        </div>
+
+        <div class="color-box named-muted">
+          <span class="color-label">slategray</span>
+          A muted background or text color.
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) Hex colors -->
+    <section class="section">
+      <h2>2. Hex Colors (#RRGGBB)</h2>
+      <p>Hex values like <code>#1E88E5</code> or <code>#FFB74D</code> give precise control over color using the RGB model.</p>
+
+      <div class="color-row">
+        <div class="color-box hex-main-bg">
+          <span class="color-label">#1E88E5</span>
+          Main brand blue (background, buttons).
+        </div>
+
+        <div class="color-box hex-dark">
+          <span class="color-label">#212121</span>
+          Very dark gray for headers or footers.
+        </div>
+
+        <div class="color-box hex-soft">
+          <span class="color-label">#FFB74D</span>
+          Soft accent color for highlights.
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) RGB / RGBA -->
+    <section class="section">
+      <h2>3. RGB and RGBA</h2>
+      <p><code>rgb()</code> uses 0-255 values for red, green, and blue; <code>rgba()</code> adds an alpha channel (0-1) for transparency.</p>
+
+      <div class="color-row">
+        <div class="color-box rgb-solid">
+          <span class="color-label">rgb(76, 175, 80)</span>
+          Solid green success color.
+        </div>
+
+        <div class="color-box rgba-semi">
+          <span class="color-label">rgba(156, 39, 176, 0.7)</span>
+          Semi-transparent purple accent.
+        </div>
+      </div>
+
+      <div class="color-row" style="margin-top: 12px;">
+        <div class="color-box rgba-overlay-demo">
+          <div class="rgba-overlay-text">
+            <span class="color-label">Overlay with rgba(0, 0, 0, 0.45)</span>
+            Transparent dark overlay on top of an image.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) HSL / HSLA -->
+    <section class="section">
+      <h2>4. HSL and HSLA</h2>
+      <p><code>hsl()</code> uses Hue (0-360), Saturation (%), and Lightness (%). It’s great for generating consistent palettes by adjusting saturation and lightness.</p>
+
+      <div class="color-row">
+        <div class="color-box hsl-base">
+          <span class="color-label">hsl(210, 90%, 56%)</span>
+          Base brand blue.
+        </div>
+
+        <div class="color-box hsl-lighter">
+          <span class="color-label">hsl(210, 90%, 80%)</span>
+          Lighter version of the same hue.
+        </div>
+
+        <div class="color-box hsl-desaturated">
+          <span class="color-label">hsl(210, 30%, 50%)</span>
+          More muted, desaturated blue.
+        </div>
+      </div>
+
+      <div class="color-row" style="margin-top: 12px;">
+        <div class="color-box hsla-glass">
+          <span class="color-label">hsla(0, 0%, 100%, 0.6)</span>
+          Glass-like white background for cards.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      CSS color formats (named, hex, rgb/rgba, hsl/hsla) in a small palette demo page.
+    </footer>
+  </div>
+</body>
+</html>
