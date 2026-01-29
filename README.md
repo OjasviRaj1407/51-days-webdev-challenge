@@ -59,6 +59,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 16 | Color in CSS: using named colors, hex codes, rgb/rgba, and hsl/hsla to define precise colors and transparency for text and backgrounds | `Day-16` | ✅ |
 
+| 17 | CSS colors practice page: applied named colors, hex codes, rgb/rgba, and hsl/hsla on a small palette-style demo layout | `Day-17` | ✅ |
+
+
 
 
 
