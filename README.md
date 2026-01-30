@@ -61,6 +61,9 @@ Each day I add notes, code snippets, or mini projects to strengthen my fundament
 
 | 17 | CSS colors practice page: applied named colors, hex codes, rgb/rgba, and hsl/hsla on a small palette-style demo layout | `Day-17` | ✅ |
 
+| 18 | CSS box model practice: built a feature cards page to understand content, padding, border, margin, and box-sizing with different spacing setups | `Day-18` | ✅ |
+
+
 
 
 
