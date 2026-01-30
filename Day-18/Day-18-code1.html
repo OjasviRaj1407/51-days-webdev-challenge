@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 18 – CSS Box Model Practice</title>
+
+  <style>
+    /* 1. Global page styling */
+    * {
+      box-sizing : border-box; /* width includes padding + border */
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      color: #1f2933;
+    }
+
+    .page-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    h1, h2 {
+      margin: 0 0 8px 0;
+    }
+
+    p {
+      margin: 4px 0 12px 0;
+    }
+
+    /* 2. Section container to see vertical spacing (margin) */
+    .section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 16px 20px;   /* inner space */
+      margin-bottom: 20px;  /* space outside between sections */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .section small {
+      color: #6b7280;
+    }
+
+    /* 3. Box model demo cards */
+    .card-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .card {
+      flex: 1 1 280px;
+      background-color: #f9fafb;
+      border: 2px solid #d1d5db;  /* border around padding + content */
+      border-radius: 8px;
+      padding: 16px;              /* padding between border and content */
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background-color: #e5e7eb;
+      margin-bottom: 8px;
+    }
+
+    /* 4. Cards with different padding and margin to feel the box model */
+    .card-tight {
+      padding: 8px;   /* less inner space */
+    }
+
+    .card-spacious {
+      padding: 24px;  /* more inner space */
+    }
+
+    .card-with-margin {
+      margin-top: 12px;  /* extra outer space above this card */
+    }
+
+    /* 5. Highlight boxes to show content vs padding vs border */
+    .box-demo-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .box-demo {
+      flex: 1 1 280px;
+      background-color: #ffffff;
+      border: 2px solid #2563eb;  /* blue border */
+      padding: 16px;
+      margin-top: 12px;
+    }
+
+    .box-demo p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .box-demo-label {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .tag-inline {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      margin-right: 4px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 16px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <h1>Day 18 - CSS Box Model Practice</h1>
+    <p>This page practices the CSS box model : <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong> using simple feature cards.</p>
+
+    <!-- Section 1: Basic cards -->
+    <section class="section">
+      <h2>1. Feature Cards with Default Spacing</h2>
+      <small>Each card is a box: margin (outside), border, padding (inside), and content.</small>
+
+      <div class="card-row">
+        <div class="card">
+          <div class="card-title">Standard Card</div>
+          <div class="card-tag">padding : 16px</div>
+          <p>This card uses medium padding inside the border, so text has breathing room.</p>
+        </div>
+
+        <div class="card card-tight">
+          <div class="card-title">Tight Card</div>
+          <div class="card-tag">padding : 8px</div>
+          <p>Smaller padding makes the content feel more compact inside the same border.</p>
+        </div>
+
+        <div class="card card-spacious">
+          <div class="card-title">Spacious Card</div>
+          <div class="card-tag">padding : 24px</div>
+          <p>More padding increases inner space, even though the border outline is similar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Margin differences -->
+    <section class="section">
+      <h2>2. Margin Between Elements</h2>
+      <small>Margin controls the space outside the box, between one card and another.</small>
+
+      <div class="card-row">
+        <div class="card">
+          <div class="card-title">Card Without Extra Margin</div>
+          <p>This card only has the row gap around it. No custom margin on the card itself.</p>
+        </div>
+
+        <div class="card card-with-margin">
+          <div class="card-title">Card With Extra Top Margin</div>
+          <div class="card-tag">margin-top : 12px</div>
+          <p>Extra top margin pushes this card down relative to the others, without changing its inner spacing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Visualizing the box model -->
+    <section class="section">
+      <h2>3. Visualizing Content, Padding, Border, Margin</h2>
+      <small>The divs below highlight how changing padding and border affects total visual size.</small>
+
+      <div class="box-demo-wrapper">
+        <div class="box-demo">
+          <div class="box-demo-label">Box A - Base</div>
+          <p><span class="tag-inline">padding : 16px</span><span class="tag-inline">border : 2px</span></p>
+          <p>This is a base box. Note how far the text is from the blue border.</p>
+        </div>
+
+        <div class="box-demo" style="padding: 32px;">
+          <div class="box-demo-label">Box B - More Padding</div>
+          <p><span class="tag-inline">padding : 32px</span><span class="tag-inline">border : 2px</span></p>
+          <p>Increased padding pushes the content inward, making the box look “larger” while the margin outside is unchanged.</p>
+        </div>
+
+        <div class="box-demo" style="border-width: 6px;">
+          <div class="box-demo-label">Box C - Thicker Border</div>
+          <p><span class="tag-inline">padding : 16px</span><span class="tag-inline">border : 6px</span></p>
+          <p>A thicker border increases the visible frame around the content but keeps the inner spacing the same.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Day 18 : Practiced the CSS box model by adjusting padding, margin, and border on simple cards.
+    </footer>
+  </div>
+</body>
+</html>
